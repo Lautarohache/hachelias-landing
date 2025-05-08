@@ -4,7 +4,7 @@ import Logo from "./Icons/Logo";
 import Link from "next/link";
 import { motion } from "framer-motion";
 
-export default function index() {
+export default function Navbar() {
   const [show, setshow] = useState(false);
 
   const menuVariants = {

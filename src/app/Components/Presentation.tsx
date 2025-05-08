@@ -3,7 +3,6 @@ import { useState, useEffect } from "react";
 import { motion } from "framer-motion";
 
 const Presentation = () => {
-  const [showAnimation, setShowAnimation] = useState(true);
   const [colorChanged, setColorChanged] = useState(false);
 
   useEffect(() => {
@@ -12,12 +11,9 @@ const Presentation = () => {
       setColorChanged(true);
     }, 1500); // Cambiar color a los 1.5 segundos
 
-    const timer = setTimeout(() => {
-      setShowAnimation(false);
-    }, 3000); // Este tiempo puede ajustarse según sea necesario
+   
 
     return () => {
-      clearTimeout(timer);
       clearTimeout(timer2);
     };
   }, []);
