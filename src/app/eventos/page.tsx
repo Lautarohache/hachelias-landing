@@ -9,7 +9,7 @@ import Link from "next/link";
 import { eventos } from "../constants/constants";
 
 const Eventos = () => {
-  console.log("Hola")
+ 
   return (
     <section className="min-h-screen w-full py-20 ">
       <Wrapper>
