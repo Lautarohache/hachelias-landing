@@ -1,0 +1,87 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+
+:root {
+  --background: #ffffff;
+  --foreground: #171717;
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --background: #0a0a0a;
+    --foreground: #ededed;
+    --organgeColor : #F49920;
+    --grayColor : #3F3F3F;
+    --grayLight: rgba(223, 223, 223, 1);
+  }
+}
+
+body {
+
+  font-family: Arial, Helvetica, sans-serif;
+ 
+}
+
+.text-orangeColor {
+  color: var(--organgeColor)
+}
+
+.bg-orangeColor {
+  background-color: var(--organgeColor);
+}
+
+.bg-grayLight {
+  background-color: var(--grayLight);
+}
+
+
+.z-index5 {
+  z-index:5
+}
+
+@keyframes infinite-scroll {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(-50%);
+  }
+}
+
+.animate-infinite-scroll {
+  animation: infinite-scroll 30s linear infinite;
+}
+
+.container {
+  display: flex;
+  overflow: hidden;
+}
+
+.list {
+  display: flex;
+  flex: none;
+}
+
+.list li {
+  margin-right: 1rem; /* Ajusta el espacio entre imágenes */
+}
+
+
+.card {
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  transform: scale(1);
+  
+}
+
+.card:hover {
+  transform: scale(1.1); /* Aumenta el tamaño */
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2); /* Agrega una sombra para el efecto */
+  z-index: 15 ;
+}
+
+html {
+  scroll-behavior: smooth;
+}
