@@ -9,7 +9,7 @@ export const aboutActivities = [
   // { id: "3", title: "CCTV", img: "/activity_3.png", hrefCta: "#" },
   {
     id: "4",
-    title: "STREAMING Y TV",
+    title: "STREAMING Y PODCAST",
     img: "/activity_4.png",
     hrefCta: "/streaming",
   },
